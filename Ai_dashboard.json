@@ -1,0 +1,531 @@
+{
+  "name": "Ai_dashboard",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        1440,
+        416
+      ],
+      "id": "dba99513-9773-4c9e-aebd-6661c222d049",
+      "name": "Append or update row in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "eoeDXwFrmv52ej9z",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        400,
+        144
+      ],
+      "id": "557da153-654c-4d49-bf9c-3068c8167eba",
+      "name": "Edit(Optional)"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        192,
+        -128
+      ],
+      "id": "24bebeee-48ba-45cf-9360-4588d0c47244",
+      "name": "Read the petition",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ZweRsgglefYs7hQL",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "ai_dashboard_data_get",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -48,
+        -192
+      ],
+      "id": "f8af5172-4b8b-48eb-9d84-8faa7b80a0b3",
+      "name": "The request arrives",
+      "webhookId": "c499ec8c-304b-4c1c-987b-b3696ba20135"
+    },
+    {
+      "parameters": {
+        "path": "dashboard_data_post",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -48,
+        144
+      ],
+      "id": "bc97b1dd-272d-48db-837b-621abe1da7a8",
+      "name": "The form is sent",
+      "webhookId": "98eac5eb-aed9-4a64-b0cb-55b845e226df"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        192,
+        208
+      ],
+      "id": "0a0322ce-382f-439d-8a53-b1df07d57308",
+      "name": "It is saved",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ZweRsgglefYs7hQL",
+          "name": "Google Sheets"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f214742e-3e63-428d-a2c6-0f6f7a15c394",
+              "leftValue": "={{ $json.Mensaje}}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        912,
+        224
+      ],
+      "id": "626c9a3f-c370-46aa-bd37-338b0b7410d6",
+      "name": "If there is an error"
+    },
+    {
+      "parameters": {
+        "subject": "Error!",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1248,
+        416
+      ],
+      "id": "4d5508f4-8767-4408-b65d-a5003f013d95",
+      "name": "Error notification",
+      "webhookId": "a4bf0b68-008b-4b5c-9004-30c901ec6c04",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "0eOrJMwBOA9oypxY",
+          "name": "Gmail "
+        }
+      }
+    },
+    {
+      "parameters": {
+        "subject": "\"Notificacion de la operacion\"",
+        "message": "\"Alguien completo el formulario\"",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1248,
+        48
+      ],
+      "id": "6262794d-b371-4337-9667-a44f09350c43",
+      "name": "Notification",
+      "webhookId": "9b883b00-d9a8-4501-b27d-e8b1fcd9d876",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "0eOrJMwBOA9oypxY",
+          "name": "Gmail "
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "La informacion se procesa para guardarse",
+        "height": 256,
+        "width": 256,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        112,
+        112
+      ],
+      "typeVersion": 1,
+      "id": "eb0264f2-56e5-45e1-ab35-01c824cd9661",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "La Peticion se lee, para entregarla\n",
+        "height": 256,
+        "width": 256,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        112,
+        -224
+      ],
+      "typeVersion": 1,
+      "id": "d2ae8810-580d-4ca2-8e42-71f265edd32c",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "El asistente AI crea una respuesta segun el mensaje del cliente\n",
+        "height": 256,
+        "width": 336,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        560,
+        112
+      ],
+      "typeVersion": 1,
+      "id": "b1d21fb4-bd15-432d-9a6c-4f1f748ef456",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "Se envian los datos al dashboard",
+        "height": 208,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        560,
+        -208
+      ],
+      "typeVersion": 1,
+      "id": "53835df6-04f6-4223-b013-7f1a2793a5bc",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        400,
+        -192
+      ],
+      "id": "318439f7-bd73-4f76-88bd-46453b4bd076",
+      "name": "Edit(Optional)2"
+    },
+    {
+      "parameters": {
+        "content": "En caso de un error, el programa guarda y manda una notificacion",
+        "height": 256,
+        "width": 560,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1200,
+        336
+      ],
+      "typeVersion": 1,
+      "id": "34dbd6dc-553a-4e56-a3c8-9903275788e6",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1648,
+        416
+      ],
+      "id": "d70010ae-b33b-4ec4-b082-5ca0c3d97430",
+      "name": "Send data to the dashboard"
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1440,
+        48
+      ],
+      "id": "15b18faa-abb3-42e8-a4a0-a9018f61c259",
+      "name": "Send data to the dashboard1"
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        640,
+        -144
+      ],
+      "id": "49ab7296-57ec-4792-80d0-70d0466625d2",
+      "name": "Send the data to the dashboard"
+    },
+    {
+      "parameters": {
+        "content": "se envia el correo y la informacion al webhook",
+        "height": 256,
+        "width": 400,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1200,
+        -48
+      ],
+      "typeVersion": 1,
+      "id": "832446ce-a7be-4d53-90ae-b8ee911ae899",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "resource": "assistant",
+        "assistantId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        592,
+        240
+      ],
+      "id": "f144ee1b-2568-4b27-90fe-0156b4b313b0",
+      "name": "Message a model",
+      "credentials": {
+        "openAiApi": {
+          "id": "QsjMC6RMpl7eNKWE",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Append or update row in sheet1": {
+      "main": [
+        [
+          {
+            "node": "Send data to the dashboard",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit(Optional)": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read the petition": {
+      "main": [
+        [
+          {
+            "node": "Edit(Optional)2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "The request arrives": {
+      "main": [
+        [
+          {
+            "node": "Read the petition",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "The form is sent": {
+      "main": [
+        [
+          {
+            "node": "It is saved",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "It is saved": {
+      "main": [
+        [
+          {
+            "node": "Edit(Optional)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If there is an error": {
+      "main": [
+        [
+          {
+            "node": "Notification",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error notification": {
+      "main": [
+        [
+          {
+            "node": "Append or update row in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Notification": {
+      "main": [
+        [
+          {
+            "node": "Send data to the dashboard1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit(Optional)2": {
+      "main": [
+        [
+          {
+            "node": "Send the data to the dashboard",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "If there is an error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f28c830c-7042-444b-8006-60420446b6ee",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "a6f86e6b1a7c21ce4c2fc1183b54d89c82854030e511e1baeed1b0c053cc45f3"
+  },
+  "id": "3Bs7dyVSMc2TuHJw",
+  "tags": []
+}
