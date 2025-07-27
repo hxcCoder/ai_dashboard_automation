@@ -41,4 +41,31 @@ Conectar con Notion o bases de datos SQL
 
 Crear múltiples dashboards o rutas condicionales
 
+---
 
+## 🛠️ Instalación y uso
+
+### 1. Clona este repositorio
+
+bash
+git clone https://github.com/hxcCoder/ai-dashboard-automation.git
+---
+
+2. Importa el flujo en n8n
+
+Entra a tu instancia de n8n
+
+Haz clic en “Importar flujo”
+
+Selecciona el archivo Ai_dashboard.json
+
+Configura tus credenciales (OpenAI, Google Sheets, Gmail)
+---
+
+3. Crea un archivo .env basado en .env.example
+---
+
+env
+OPENAI_API_KEY=tu_openai_key
+SHEET_ID=tu_google_sheet_id
+EMAIL_DESTINO=tu_correo@gmail.com
