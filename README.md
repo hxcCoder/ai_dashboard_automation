@@ -35,26 +35,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 
 ---
 
-## 📁 Estructura del proyecto
----
-
-
-ai-dashboard-automation/
-├── Ai_dashboard.json # Flujo exportado de n8n
-├── formulario/ # Formulario web
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-├── dashboard/ # Dashboard web visual
-│ ├── dashboard.html
-│ ├── dashboard-style.css
-│ └── dashboard-script.js
-├── .env.example # Variables necesarias para correr el flujo
-├── LICENSE # MIT License
-└── README.md # Este archivo
-
----
-
 ## 🛠️ Instalación y uso
 ---
 1. Clona este repositorio
