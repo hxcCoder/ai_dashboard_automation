@@ -7,8 +7,8 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 
 ## 📸 Demo
 
-![Formulario funcionando](./formulario/screenshot1.png)  
-![Dashboard con datos](./dashboard/screenshot2.png)
+![Formulario funcionando](./assets/formulario.jpg)  
+![Dashboard con datos](./assets/dashboard.png)
 
 > *(Reemplaza estas imágenes con tus propias capturas de pantalla si las tienes)*
 
