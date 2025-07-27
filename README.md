@@ -6,6 +6,7 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 📸 Demo
+-
 
 ![Formulario funcionando](./formulario/screenshot1.png)  
 ![Dashboard con datos](./dashboard/screenshot2.png)
@@ -15,6 +16,7 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 🚀 Funcionalidades
+-
 
 - ✅ Recibe datos desde un formulario web (`nombre`, `email`, `mensaje`)
 - 🤖 Procesa el mensaje con OpenAI para generar una respuesta inteligente
@@ -22,11 +24,12 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 - 📬 Envía notificaciones por correo con Gmail
 - 📊 Visualiza los datos desde un dashboard web (GET)
 - ⚠️ Maneja errores y notifica automáticamente si algo falla
-
+  
 ---
 
 ## ⚙️ Tecnologías usadas
-
+-
+---
 - [n8n](https://n8n.io)
 - [OpenAI](https://platform.openai.com)
 - [Google Sheets API](https://developers.google.com/sheets)
@@ -36,6 +39,7 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 📁 Estructura del proyecto
+-
 ---
 
 
@@ -56,13 +60,16 @@ ai-dashboard-automation/
 ---
 
 ## 🛠️ Instalación y uso
+-
+---
+1. Clona este repositorio
 
-### 1. Clona este repositorio
-
-```bash
 git clone https://github.com/hxcCoder/ai-dashboard-automation.git
-
+-
+---
 2. Importa el flujo en n8n
+---
+
 Ve a tu instancia de n8n
 
 Haz clic en "Import"
@@ -70,3 +77,62 @@ Haz clic en "Import"
 Selecciona el archivo Ai_dashboard.json
 
 Conecta tus credenciales de OpenAI, Google Sheets y Gmail
+---
+3. Configura las variables
+---
+Crea un archivo .env basado en el ejemplo:
+---
+
+env:
+OPENAI_API_KEY=tu_api_key
+SHEET_ID=tu_sheet_id
+EMAIL_DESTINO=correo@ejemplo.com
+
+---
+4. Ejecuta el formulario
+---
+Abre formulario/index.html en tu navegador, completa el formulario y envíalo.
+---
+5. Visualiza los datos
+---
+
+Abre dashboard/dashboard.html para ver los datos actualizados automáticamente.
+
+---
+💼 Casos de uso
+-
+---
+
+Freelancers con formularios de contacto
+
+Tiendas online que quieren automatizar atención
+
+Clínicas que agendan consultas desde su sitio web
+
+Agencias o consultoras que reciben solicitudes constantes
+
+Cualquier negocio que quiera dar una primera respuesta automática
+
+---
+📌 ¿Por qué este proyecto es útil?
+-
+---
+
+💬 Atención inmediata con IA
+
+🔐 Organiza los datos en un sistema seguro
+
+⏱️ Ahorra tiempo y trabajo manual
+
+🧩 Escalable: se puede integrar con Telegram, Notion, WhatsApp, CRMs, etc.
+
+---
+📬 Contacto
+-
+---
+¿Quieres este sistema funcionando en tu negocio o adaptarlo a tus necesidades?
+
+👤 Desarrollado por hxcCoder
+📧 Correo: pon_aquí_tu_correo@ejemplo.com
+🔗 (Agrega tu LinkedIn si tienes)
+
