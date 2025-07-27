@@ -61,11 +61,9 @@ Crea un archivo .env basado en el ejemplo:
 ---
 
 env:
-OPENAI_API_KEY=tu_api_key
----
-SHEET_ID=tu_sheet_id
----
-EMAIL_DESTINO=correo@ejemplo.com
+- OPENAI_API_KEY=tu_api_key
+- SHEET_ID=tu_sheet_id
+- EMAIL_DESTINO=correo@ejemplo.com
 ---
 4. Ejecuta el formulario
 ---
