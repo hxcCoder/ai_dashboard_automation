@@ -47,11 +47,15 @@ HTML, CSS y JS (formulario y dashboard frontend)
 
 
 1. Clona este repositorio
+---
+
 bash
 Copiar
 Editar
 git clone https://github.com/tuusuario/ai-dashboard-automation.git
-2. Importa el flujo en n8n
+
+3. Importa el flujo en n8n
+---
 Entra a tu instancia de n8n
 
 Haz clic en Importar flujo
@@ -61,8 +65,7 @@ Selecciona el archivo Ai_dashboard.json
 Configura tus credenciales (OpenAI, Gmail, Google Sheets)
 
 3. Configura variables
-   -
-
+---
 Crea un archivo .env con base en .env.example, por ejemplo:
 
 env
@@ -98,18 +101,19 @@ Aquí se mostrarán los datos guardados automáticamente.
 ---
 
 
-Ahorra tiempo en atención al cliente
+- Ahorra tiempo en atención al cliente
 
-Da una primera respuesta automática
+- Da una primera respuesta automática
 
-Organiza los datos sin intervención humana
+- Organiza los datos sin intervención humana
 
-Escalable: se puede integrar con Notion, Telegram, CRMs y más
+- Escalable: se puede integrar con Notion, Telegram, CRMs y más
 
 📩 Contacto
 ---
 
 ¿Quieres que adapte esto a tu negocio?
+---
 👉 Contáctame por LinkedIn o por correo: tucorreo@dominio.com
 
 📝 Licencia
