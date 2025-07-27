@@ -10,7 +10,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 [Formulario funcionando](./assets/form.JPG)  
 [Dashboard con datos](./assets/ai_dashboard.JPG)
 
-> *(Reemplaza estas imágenes con tus propias capturas de pantalla si las tienes)*
 
 ---
 
