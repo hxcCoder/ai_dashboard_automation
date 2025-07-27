@@ -8,8 +8,11 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ## 📸 Demo
 
 [Formulario funcionando](./assets/form.JPG)  
+---
 [FlujoN8N](./assets/ai_dashboard.JPG)
+---
 [Dashboard](./assets/dashboard.JPG)
+---
 
 
 ---
