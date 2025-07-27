@@ -6,7 +6,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 📸 Demo
--
 
 ![Formulario funcionando](./formulario/screenshot1.png)  
 ![Dashboard con datos](./dashboard/screenshot2.png)
@@ -16,7 +15,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 🚀 Funcionalidades
--
 
 - ✅ Recibe datos desde un formulario web (`nombre`, `email`, `mensaje`)
 - 🤖 Procesa el mensaje con OpenAI para generar una respuesta inteligente
@@ -28,7 +26,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## ⚙️ Tecnologías usadas
--
 ---
 - [n8n](https://n8n.io)
 - [OpenAI](https://platform.openai.com)
@@ -39,7 +36,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 📁 Estructura del proyecto
--
 ---
 
 
@@ -60,12 +56,10 @@ ai-dashboard-automation/
 ---
 
 ## 🛠️ Instalación y uso
--
 ---
 1. Clona este repositorio
 
 git clone https://github.com/hxcCoder/ai-dashboard-automation.git
--
 ---
 2. Importa el flujo en n8n
 ---
@@ -100,7 +94,6 @@ Abre dashboard/dashboard.html para ver los datos actualizados automáticamente.
 
 ---
 💼 Casos de uso
--
 ---
 
 Freelancers con formularios de contacto
@@ -115,7 +108,6 @@ Cualquier negocio que quiera dar una primera respuesta automática
 
 ---
 📌 ¿Por qué este proyecto es útil?
--
 ---
 
 💬 Atención inmediata con IA
@@ -128,7 +120,6 @@ Cualquier negocio que quiera dar una primera respuesta automática
 
 ---
 📬 Contacto
--
 ---
 ¿Quieres este sistema funcionando en tu negocio o adaptarlo a tus necesidades?
 
