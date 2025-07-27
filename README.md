@@ -36,10 +36,22 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 ---
 
 ## 📁 Estructura del proyecto
+---
 
-Conectar con Notion o bases de datos SQL
 
-Crear múltiples dashboards o rutas condicionales
+ai-dashboard-automation/
+├── Ai_dashboard.json # Flujo exportado de n8n
+├── formulario/ # Formulario web
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
+├── dashboard/ # Dashboard web visual
+│ ├── dashboard.html
+│ ├── dashboard-style.css
+│ └── dashboard-script.js
+├── .env.example # Variables necesarias para correr el flujo
+├── LICENSE # MIT License
+└── README.md # Este archivo
 
 ---
 
@@ -47,25 +59,14 @@ Crear múltiples dashboards o rutas condicionales
 
 ### 1. Clona este repositorio
 
-bash
+```bash
 git clone https://github.com/hxcCoder/ai-dashboard-automation.git
----
 
 2. Importa el flujo en n8n
+Ve a tu instancia de n8n
 
-Entra a tu instancia de n8n
-
-Haz clic en “Importar flujo”
+Haz clic en "Import"
 
 Selecciona el archivo Ai_dashboard.json
 
-Configura tus credenciales (OpenAI, Google Sheets, Gmail)
----
-
-3. Crea un archivo .env basado en .env.example
----
-
-env
-OPENAI_API_KEY=tu_openai_key
-SHEET_ID=tu_google_sheet_id
-EMAIL_DESTINO=tu_correo@gmail.com
+Conecta tus credenciales de OpenAI, Google Sheets y Gmail
