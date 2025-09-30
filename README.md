@@ -5,8 +5,6 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 
 ---
 
-## 📸 Demo
-
 [Formulario funcionando](./assets/form.JPG)  
 ---
 [FlujoN8N](./assets/ai_dashboard.JPG)
@@ -88,17 +86,7 @@ Agencias o consultoras que reciben solicitudes constantes
 
 Cualquier negocio que quiera dar una primera respuesta automática
 
----
-📌 ¿Por qué este proyecto es útil?
----
-
-💬 Atención inmediata con IA
-
-🔐 Organiza los datos en un sistema seguro
-
-⏱️ Ahorra tiempo y trabajo manual
-
-🧩 Escalable: se puede integrar con Telegram, Notion, WhatsApp, CRMs, etc.
+--
 
 ---
 📬 Contacto
