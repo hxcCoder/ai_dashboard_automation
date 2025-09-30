@@ -85,13 +85,3 @@ Clínicas que agendan consultas desde su sitio web
 Agencias o consultoras que reciben solicitudes constantes
 
 Cualquier negocio que quiera dar una primera respuesta automática
-
----
-📬 Contacto
----
-¿Quieres este sistema funcionando en tu negocio o adaptarlo a tus necesidades?
-
-👤 Desarrollado por hxcCoder
-📧 Correo: pon_aquí_tu_correo@ejemplo.com
-🔗 (Agrega tu LinkedIn si tienes)
-
