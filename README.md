@@ -5,16 +5,16 @@ Un sistema completo que recibe formularios, responde automáticamente con IA, gu
 Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes sin contratar a nadie.
 
 ---
+🖥️ Demostración real
 
-[Formulario funcionando](./assets/form.JPG)  
+Formulario → IA → Google Sheets → Dashboard → Notificación
+[Formulario ](./assets/form.JPG)  
 ---
 [Flujo N8N](./assets/ai_dashboard.JPG)
 ---
 [Dashboard](./assets/dashboard.JPG)
 ---
 
-
----
 
 ## 🚀 Qué hace este sistema 
 
