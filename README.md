@@ -64,8 +64,8 @@ Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes si
 - ✔ Es más barato que contratar a alguien
 - ✔ Rápido de instalar (1–2 días)
 
-💰 Planes para vender (muy importante)
-
+💰 Planes 
+-
 Plan Básico — $25.000
 Formulario + Envío a Sheets + Dashboard
 
