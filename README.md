@@ -31,12 +31,15 @@ Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes si
 
 - No necesita pagar suscripciones
 
-## ⚙️ Tecnologías usadas
-- [n8n](https://n8n.io)
-- [OpenAI](https://platform.openai.com)
-- [Google Sheets API](https://developers.google.com/sheets)
-- [Gmail API](https://developers.google.com/gmail/api)
-- HTML, CSS y JavaScript
+## ⚙️ Tecnologías.
+
+[![n8n](https://img.shields.io/badge/n8n-automation-04AA6D?logo=n8n&logoColor=white)](https://n8n.io)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-000000?logo=openai&logoColor=white)](https://platform.openai.com)
+[![Google Sheets](https://img.shields.io/badge/Google_Sheets-API-0F9D58?logo=google-sheets&logoColor=white)](https://developers.google.com/sheets)
+[![Gmail](https://img.shields.io/badge/Gmail-API-D14836?logo=gmail&logoColor=white)](https://developers.google.com/gmail/api)
+[![HTML5](https://img.shields.io/badge/HTML5-markup-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-styles-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-language-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 
 🎯 Para quién es perfecto
 -
