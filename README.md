@@ -75,8 +75,4 @@ Formulario + Sheets + Dashboard + Respuestas automáticas con IA
 Plan Premium — $70.000+
 Todo lo anterior + Correos automáticos + Personalizaciones + Integración completa
 
-📩 Contáctame
 
-Correo: benjaminmillalonc@gmail.com
-
-GitHub: hxcCoder
