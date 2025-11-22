@@ -7,13 +7,14 @@ Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes si
 ---
 🖥️ Demostración real
 
-Formulario → IA → Google Sheets → Dashboard → Notificación
+- Formulario → IA → Google Sheets → Dashboard → Notificación
+
 [Formulario ](./assets/form.JPG)  
----
+
 [Flujo N8N](./assets/ai_dashboard.JPG)
----
+
 [Dashboard](./assets/dashboard.JPG)
----
+
 
 
 ## 🚀 Qué hace este sistema 
