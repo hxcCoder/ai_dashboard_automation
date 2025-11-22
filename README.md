@@ -43,17 +43,17 @@ Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes si
 
 🎯 Para quién es perfecto
 -
-Tiendas online
+- Tiendas online
 
-Servicios (peluquerías, barberías, talleres, gimnasios)
+- Servicios (peluquerías, barberías, talleres, gimnasios)
 
-Clínicas pequeñas
+- Clínicas pequeñas
 
-Profesionales independientes
+- Profesionales independientes
 
-Agencias y consultoras
+- Agencias y consultoras
 
-Emprendedores que no tienen tiempo para responder mensajes
+- Emprendedores que no tienen tiempo para responder mensajes
 
 💥 Por qué te conviene este sistema 
 -
