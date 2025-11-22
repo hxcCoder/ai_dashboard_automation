@@ -31,7 +31,6 @@ Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes si
 - No necesita pagar suscripciones
 
 ## ⚙️ Tecnologías usadas
----
 - [n8n](https://n8n.io)
 - [OpenAI](https://platform.openai.com)
 - [Google Sheets API](https://developers.google.com/sheets)
