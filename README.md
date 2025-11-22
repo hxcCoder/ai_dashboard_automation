@@ -52,7 +52,7 @@ Agencias y consultoras
 
 Emprendedores que no tienen tiempo para responder mensajes
 
-💥 Por qué te conviene este sistema (beneficios reales que venden)
+💥 Por qué te conviene este sistema 
 -
 ✔ Atiende automáticamente cuando estás ocupado
 ✔ Nunca más pierdes un mensaje de cliente
@@ -60,3 +60,20 @@ Emprendedores que no tienen tiempo para responder mensajes
 ✔ Facilita ventas, reservas o solicitudes
 ✔ Es más barato que contratar a alguien
 ✔ Rápido de instalar (1–2 días)
+
+💰 Planes para vender (muy importante)
+
+Plan Básico — $25.000
+Formulario + Envío a Sheets + Dashboard
+
+Plan Pro — $45.000
+Formulario + Sheets + Dashboard + Respuestas automáticas con IA
+
+Plan Premium — $70.000+
+Todo lo anterior + Correos automáticos + Personalizaciones + Integración completa
+
+📩 Contáctame
+
+Correo: benjaminmillalonc@gmail.com
+
+GitHub: hxcCoder
