@@ -1,13 +1,14 @@
 # 🧠 AI Dashboard Automation  
-**Asistente inteligente con IA + n8n + Google Sheets + Formularios Web**
+**AI Dashboard Automation – Asistente Inteligente 24/7**
 
-Este proyecto automatiza la recepción de formularios web, genera respuestas inteligentes con OpenAI, guarda los datos en Google Sheets y los muestra en un dashboard visual. Ideal para freelancers, negocios pequeños o agencias que quieren optimizar su atención al cliente sin costos de SaaS.
+Un sistema completo que recibe formularios, responde automáticamente con IA, guarda todo en Google Sheets y te muestra un dashboard en tiempo real.
+Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes sin contratar a nadie.
 
 ---
 
 [Formulario funcionando](./assets/form.JPG)  
 ---
-[FlujoN8N](./assets/ai_dashboard.JPG)
+[Flujo N8N](./assets/ai_dashboard.JPG)
 ---
 [Dashboard](./assets/dashboard.JPG)
 ---
@@ -15,16 +16,19 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Qué hace este sistema 
 
-- ✅ Recibe datos desde un formulario web (`nombre`, `email`, `mensaje`)
-- 🤖 Procesa el mensaje con OpenAI para generar una respuesta inteligente
-- 📄 Guarda todos los datos automáticamente en Google Sheets
-- 📬 Envía notificaciones por correo con Gmail
-- 📊 Visualiza los datos desde un dashboard web (GET)
-- ⚠️ Maneja errores y notifica automáticamente si algo falla
-  
----
+- Responde automáticamente los mensajes de tus clientes con IA
+
+- Guarda todos los datos en Google Sheets sin que hagas nada
+
+- Te envía notificaciones al correo cuando entra un nuevo cliente
+
+- Muestra un dashboard en tiempo real con todos los registros
+
+- Funciona solo 24/7
+
+- No necesita pagar suscripciones
 
 ## ⚙️ Tecnologías usadas
 ---
@@ -33,55 +37,27 @@ Este proyecto automatiza la recepción de formularios web, genera respuestas int
 - [Google Sheets API](https://developers.google.com/sheets)
 - [Gmail API](https://developers.google.com/gmail/api)
 - HTML, CSS y JavaScript
-
 ---
 
-## 🛠️ Instalación y uso
----
-1. Clona este repositorio
+🎯 Para quién es perfecto
+-
+Tiendas online
 
-git clone https://github.com/hxcCoder/ai-dashboard-automation.git
----
-2. Importa el flujo en n8n
----
+Servicios (peluquerías, barberías, talleres, gimnasios)
 
-Ve a tu instancia de n8n
+Clínicas pequeñas
 
-Haz clic en "Import"
+Profesionales independientes
 
-Selecciona el archivo Ai_dashboard.json
+Agencias y consultoras
 
-Conecta tus credenciales de OpenAI, Google Sheets y Gmail
----
-3. Configura las variables
----
-Crea un archivo .env basado en el ejemplo:
----
+Emprendedores que no tienen tiempo para responder mensajes
 
-env:
-- OPENAI_API_KEY=tu_api_key
-- SHEET_ID=tu_sheet_id
-- EMAIL_DESTINO=correo@ejemplo.com
----
-4. Ejecuta el formulario
----
-Abre formulario/index.html en tu navegador, completa el formulario y envíalo.
----
-5. Visualiza los datos
----
-
-Abre dashboard/dashboard.html para ver los datos actualizados automáticamente.
-
----
-💼 Casos de uso
----
-
-Freelancers con formularios de contacto
-
-Tiendas online que quieren automatizar atención
-
-Clínicas que agendan consultas desde su sitio web
-
-Agencias o consultoras que reciben solicitudes constantes
-
-Cualquier negocio que quiera dar una primera respuesta automática
+💥 Por qué te conviene este sistema (beneficios reales que venden)
+-
+✔ Atiende automáticamente cuando estás ocupado
+✔ Nunca más pierdes un mensaje de cliente
+✔ Te organiza los datos sin planillas manuales
+✔ Facilita ventas, reservas o solicitudes
+✔ Es más barato que contratar a alguien
+✔ Rápido de instalar (1–2 días)
