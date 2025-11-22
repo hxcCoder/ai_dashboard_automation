@@ -37,8 +37,7 @@ Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes si
 - [Google Sheets API](https://developers.google.com/sheets)
 - [Gmail API](https://developers.google.com/gmail/api)
 - HTML, CSS y JavaScript
----
-
+- 
 🎯 Para quién es perfecto
 -
 Tiendas online
