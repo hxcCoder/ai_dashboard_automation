@@ -5,7 +5,7 @@ Un sistema completo que recibe formularios, responde automáticamente con IA, gu
 Ideal para negocios que quieren ahorrar tiempo y atender mejor a sus clientes sin contratar a nadie.
 
 ---
-🖥️ Demostración real
+🖥️ Demostración
 
 - Formulario → IA → Google Sheets → Dashboard → Notificación
 
