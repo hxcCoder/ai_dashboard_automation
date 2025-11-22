@@ -54,12 +54,12 @@ Emprendedores que no tienen tiempo para responder mensajes
 
 💥 Por qué te conviene este sistema 
 -
-✔ Atiende automáticamente cuando estás ocupado
-✔ Nunca más pierdes un mensaje de cliente
-✔ Te organiza los datos sin planillas manuales
-✔ Facilita ventas, reservas o solicitudes
-✔ Es más barato que contratar a alguien
-✔ Rápido de instalar (1–2 días)
+- ✔ Atiende automáticamente cuando estás ocupado
+- ✔ Nunca más pierdes un mensaje de cliente
+- ✔ Te organiza los datos sin planillas manuales
+- ✔ Facilita ventas, reservas o solicitudes
+- ✔ Es más barato que contratar a alguien
+- ✔ Rápido de instalar (1–2 días)
 
 💰 Planes para vender (muy importante)
 
